@@ -41,4 +41,9 @@ apc_bin_loadfile()           从二进制内容加载到APC缓存中\
 
 # APC的参考资料
 http://php.net/manual/en/book.apc.php \
-http://www.laruence.com/2012/08/16/2701.html
+http://www.laruence.com/2012/08/16/2701.html \
+
+# APC 升级opcache和apcu的参考资料
+https://www.devside.net/wamp-server/installing-apc-for-php-5-5 \
+https://support.cloud.engineyard.com/hc/en-us/articles/205411888-PHP-Performance-I-Everything-You-Need-to-Know-About-OpCode-Caches
+https://www.jianshu.com/p/bec52fea7ff7

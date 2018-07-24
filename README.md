@@ -1,5 +1,5 @@
 # apc
-apc manager
+apc manager 本项目仅适用于PHP5.4 + APC3.1.13版本
 
 # 什么是APC
 The Alternative PHP Cache (APC) is a free and open opcode cache for PHP. Its goal is to provide a free, open, and robust framework for caching and optimizing PHP intermediate code.

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>APC载入</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<table class="TableFrame" style="width:800px;">
+	<caption class="ListTitle">APC载入　选择要载入的目录或程序</caption>
+	<tbody><tr>
+		<td>&nbsp;</td>
+		<td align="right">&nbsp;</td>
+	</tr>
+</tbody></table>
+
+
+
+<div id="outer">
+	<ul class="xt-tab">
+	    <li>选择目录</li>
+	    <li>选择BIN文件</li>
+	</ul>
+	<div class="xt-cont" id="xt-cont">
+	    <div class="xt-ul">
+	    	<form method="post" action="loadcache.php">
+	    	<input type="hidden" name="loadtype" value="load" />
+	    　　选择目录<br/>
+	    　　URL：<input type="text" name="dir" /><br/>
+	    　　是否遍历：<input style="height:13px; vertical-align:text-top; margin-top:0;" type="checkbox" name="isrecursively" /> 是 
+	　　    是否在载入前清空缓存：<input style="height:13px; vertical-align:text-top; margin-top:0;" type="checkbox" name="isclear" /> 是
+			<div style="width:800px;margin:0px auto;"><input value="提交" class="buttontype" type="submit" /></div>
+	
+		</form> 
+		</div>
+
+
+		<div class="xt-ul">
+			<form method="post" action="loadcache.php">
+	    	<input type="hidden" name="loadtype" value="load" />
+            是否在载入前清空缓存：<input style="height:13px; vertical-align:text-top; margin-top:0;" type="checkbox" name="isclear" /> 是 
+				<table class="new_tab" style="width:798px;" id="upload_file_table">
+					<tbody><tr>
+						<td>文件名：<input name="file[]" type="text"/></td>
+						<td align="right"><input value="添加" class="buttontype" onclick="addTr()" type="button"/></td>
+					</tr>
+				</tbody></table>
+                <div style="width:800px;margin:0px auto;text-align:right;"><input value="提交" class="buttontype" type="submit"/></div>
+			</form>
+
+		</div>
+	</div>
+</div>
+ 
+<style type="text/css">
+body, button, input, textarea { font: 12px/1.5 "宋体",tahoma,arial,sans-serif;}
+body, h4, h5, h6, p, dl, dt, dd, ul, ol, menu, li, pre, form, fieldset, legend, button, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+#outer{ width:800px; margin:0 auto;}
+.xt-tab {
+    border-bottom: 1px solid #1f7ebf;
+    overflow: hidden;
+}
+.xt-tab li {
+    background: none repeat scroll 0 0 #f0f0f0;
+    border: 1px solid #d4d4d4;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    line-height: 28px;
+    margin-right: 2px;
+    padding: 0 22px;
+    position: relative;
+	list-style:none;
+}
+.xt-tab li.on, .xt-tab li:hover {
+    background: none repeat scroll 0 0 #3598dc;
+    border: 1px solid #1f7ebf;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 2px;
+}
+.xt-cont .xt-ul {
+    display: none;
+
+}
+
+.xt-cont {
+    border-color: #6892d1;
+    border-right: 1px solid #6892d1;
+    border-style: solid;
+    border-width: 0 1px 1px;
+  
+}
+.xt_aerow {
+    padding-bottom: 20px;
+}
+.list_ipt{border: 1px solid #cdcdcd; width:171px; height:22px; padding-left:5px;}
+
+
+
+
+/* CSS Document */
+.new_tab{
+	
+	width:400px;
+	border-bottom:1px solid #6892D1;
+	border-collapse:collapse;
+}
+
+.new_tab tr:hover{
+	background:#DEDFFF;
+}
+.new_tab td{
+	height:22px;
+	padding:5px 5px;
+	font-size:12px;
+}
+
+
+.new_tab a{
+	font-size:12px;
+	margin-left:15px;
+	color:#6892D1;
+}
+.new_tab a:hover{
+	text-decoration:none;
+	color:#900;
+}
+
+</style>	             			
+
+<script type="text/javascript">
+$("#outer").switchTab({titCell: ".xt-tab li", mainCell:".xt-cont > div", trigger: "click", delayTime: 300});
+</script>							
+</body></html>

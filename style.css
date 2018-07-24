@@ -1,0 +1,77 @@
+﻿/* CSS Document */
+.TableFrame{
+	margin:10px auto;
+	width:400px;
+	border:1px solid #6892D1;
+	border-collapse:collapse;
+}
+.ListCellRow{
+	font-size:12px;
+	height:20px;
+}
+.ListTitle{
+	height:25px;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	background:#6892D1;
+	text-align:center;
+	line-height:25px;
+}
+.ListHeader{
+	background:#C4D4F3;
+	height:18px;
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+	text-align:center;
+}
+.xmAddTr input{
+	width:130px;
+}
+.TableFrame tr:hover{
+	background:#DEDFFF;
+}
+.TableFrame td{
+	height:22px;
+	padding:5px 5px;
+	font-size:12px;
+}
+.buttonline input{
+	border:1px solid #e7e7e7;
+	font-size:14px;
+	width:230px;
+	height:18px;
+	margin-right:10px;
+}
+.buttontype{
+	border:1px solid #fff;
+	background:#6892D1;
+	font-size:14px;
+	width:65px;
+	height:25px;
+	margin-right:10px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+.TableFrame a{
+	font-size:12px;
+	margin-left:15px;
+	color:#6892D1;
+}
+.TableFrame a:hover{
+	text-decoration:none;
+	color:#900;
+}
+.itemTxtWidth input{
+	width:200px;
+}
+.itemTxtWidth{
+	text-align:center;
+	height:50px;
+}
+.textareaType{
+	 width:190px;
+	 height:50px;
+}
